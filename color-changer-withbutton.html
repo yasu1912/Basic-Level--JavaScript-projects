@@ -5,10 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Changer with button</title>
+    <style>
+        body{
+            background-color:gray;
+        }
+        #square{
+            display:flex;
+            height:500px;
+            width:500px;
+            background-color: white;
+            margin:0 auto;
+            border-radius:2rem;
+        }
+        #h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+        }
+        #button-script{
+            display:flex;
+            position: relative;
+            margin:0 auto;
+            text-align: center;
+            top:2rem;
+            border-radius:0.5rem;
+            padding:1rem;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+        }
+        #button-script:hover{
+            background-color: darkmagenta;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div id="square" style="height:500px;width:500px;background-color:chartreuse;"> </div>
-    <button id="button-script" onclick="random()">Buraya bas</button>
+    <div id="square"><h1 id="h1">This container changes color</h1></div>
+    <button id="button-script" onclick="random()">Click Here</button>
     <script src="color-changer-withbutton.js"></script>
 </body>
 </html>
